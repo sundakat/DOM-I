@@ -79,3 +79,13 @@ contentP[2].textContent = siteContent["main-content"]["services-content"];
 contentP[3].textContent = siteContent["main-content"]["product-content"];
 contentP[4].textContent = siteContent["main-content"]["vision-content"];
 
+//Contact
+const contactHeader = document.querySelectorAll("h4");
+contactHeader[5].textContent = siteContent["contact"]["contact-h4"];
+
+const contactText = document.querySelectorAll("p");
+contactText[5].textContent = "123 Way 456 Street \r\n Somewhere, USA";
+contactText[5].setAttribute('style', 'white-space: pre;');
+contactText[6].textContent = siteContent["contact"]["phone"];
+contactText[7].textContent = siteContent["contact"]["email"];
+

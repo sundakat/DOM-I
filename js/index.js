@@ -100,11 +100,15 @@ const footerText = document.querySelector("footer p");
 footerText.textContent = siteContent["footer"]["copyright"];
 
 // Parent
-const parentElement = document.querySelector('body')
+const parentElement = document.querySelector('body');
 console.log('parent', parentElement);
 
 // .append
-const newLink = document.createElement('a')
+const newLink = document.createElement('a');
 newLink.textContent = "Append";
-parentElement.appendChild(newLink)
+parentElement.appendChild(newLink);
 
+// .prepend
+const newH1 = document.createElement('h1');
+newH1.textContent = "Prepend";
+parentElement.prepend(newH1);

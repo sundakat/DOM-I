@@ -89,3 +89,6 @@ contactText[5].setAttribute('style', 'white-space: pre;');
 contactText[6].textContent = siteContent["contact"]["phone"];
 contactText[7].textContent = siteContent["contact"]["email"];
 
+//Footer
+const footerText = document.querySelector("footer p");
+footerText.textContent = siteContent["footer"]["copyright"];

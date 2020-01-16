@@ -42,11 +42,11 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Images
-const headerimg = document.getElementById("cta-img")
-headerimg.setAttribute('src', siteContent["cta"]["img-src"]);
+const headerImg = document.getElementById("cta-img")
+headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-const midimg = document.getElementById("middle-img");
-midimg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 //Nav
 const navLinks = document.querySelectorAll("a");
@@ -61,6 +61,7 @@ navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 navLinks.forEach(function (newColor) {
   newColor.style.color = "green";
 });
+
 
 //cta
 const ctaHeader = document.querySelector("h1");
@@ -97,4 +98,13 @@ contactText[7].textContent = siteContent["contact"]["email"];
 //Footer
 const footerText = document.querySelector("footer p");
 footerText.textContent = siteContent["footer"]["copyright"];
+
+// Parent
+const parentElement = document.querySelector('body')
+console.log('parent', parentElement);
+
+// .append
+const newLink = document.createElement('a')
+newLink.textContent = "Append";
+parentElement.appendChild(newLink)
 

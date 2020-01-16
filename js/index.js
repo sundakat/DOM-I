@@ -63,3 +63,19 @@ ctaHeader.textContent = "DOM \r\n Is \r\n Awesome";
 ctaHeader.setAttribute('style', 'white-space: pre;');
 const ctaButton = document.querySelector("button");
 ctaButton.textContent = siteContent["cta"]["button"];
+
+//Main
+const contentHeader = document.querySelectorAll("h4");
+contentHeader[0].textContent = siteContent["main-content"]["features-h4"];
+contentHeader[1].textContent = siteContent["main-content"]["about-h4"];
+contentHeader[2].textContent = siteContent["main-content"]["services-h4"];
+contentHeader[3].textContent = siteContent["main-content"]["product-h4"];
+contentHeader[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const contentP = document.querySelectorAll("p");
+contentP[0].textContent = siteContent["main-content"]["features-content"];
+contentP[1].textContent = siteContent["main-content"]["about-content"];
+contentP[2].textContent = siteContent["main-content"]["services-content"];
+contentP[3].textContent = siteContent["main-content"]["product-content"];
+contentP[4].textContent = siteContent["main-content"]["vision-content"];
+

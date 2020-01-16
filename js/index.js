@@ -57,6 +57,11 @@ navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
+//Color Change
+navLinks.forEach(function (newColor) {
+  newColor.style.color = "green";
+});
+
 //cta
 const ctaHeader = document.querySelector("h1");
 ctaHeader.textContent = "DOM \r\n Is \r\n Awesome";
@@ -92,3 +97,4 @@ contactText[7].textContent = siteContent["contact"]["email"];
 //Footer
 const footerText = document.querySelector("footer p");
 footerText.textContent = siteContent["footer"]["copyright"];
+

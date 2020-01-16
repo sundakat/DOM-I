@@ -49,16 +49,16 @@ const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 //Nav
-const navLinks = document.querySelectorAll("a");
-navLinks[0].textContent = siteContent["nav"]["nav-item-1"];
-navLinks[1].textContent = siteContent["nav"]["nav-item-2"];
-navLinks[2].textContent = siteContent["nav"]["nav-item-3"];
-navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
-navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
-navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
+const a = document.querySelectorAll("a");
+a[0].textContent = siteContent["nav"]["nav-item-1"];
+a[1].textContent = siteContent["nav"]["nav-item-2"];
+a[2].textContent = siteContent["nav"]["nav-item-3"];
+a[3].textContent = siteContent["nav"]["nav-item-4"];
+a[4].textContent = siteContent["nav"]["nav-item-5"];
+a[5].textContent = siteContent["nav"]["nav-item-6"];
 
 //Color Change
-navLinks.forEach(function (newColor) {
+a.forEach(function (newColor) {
   newColor.style.color = "green";
 });
 
@@ -100,15 +100,21 @@ const footerText = document.querySelector("footer p");
 footerText.textContent = siteContent["footer"]["copyright"];
 
 // Parent
-const parentElement = document.querySelector('body');
+const parentElement = document.querySelector("nav");
 console.log('parent', parentElement);
 
 // .append
-const newLink = document.createElement('a');
-newLink.textContent = "Append";
-parentElement.appendChild(newLink);
+const newAppend = document.createElement("a");
+newAppend.textContent = "Append";
+newAppend.style.color = "green";
+parentElement.appendChild(newAppend);
 
 // .prepend
-const newH1 = document.createElement('h1');
-newH1.textContent = "Prepend";
-parentElement.prepend(newH1);
+const newPre = document.createElement("a");
+newPre.textContent = "Prepend";
+newPre.style.color = "green";
+parentElement.prepend(newPre);
+
+
+
+
